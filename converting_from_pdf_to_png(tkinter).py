@@ -137,19 +137,6 @@ def func_processing_error():
     except Exception as e: 
         mb.showinfo('Warning', 'Mistake: '+str(e))
 
-"""
-lbl_from = tk.Label(root, text='From')
-lbl_from.grid(row=4, column=0)
-digit_var1 = tk.IntVar(root, value=0)
-field_from = tk.Entry(root, textvariable=digit_var1)
-field_from.grid(row=4, column=1)
-lbl_to = tk.Label(root, text='to')
-lbl_to.grid(row=4, column=2)
-digit_var2 = tk.IntVar(root, value=0)
-field_to = tk.Entry(root, textvariable=digit_var2)
-field_to.grid(row=4, column=3)
-"""
-
 btn_converter = tk.Button(root, text='Converting', command=func_processing_error)
 btn_converter.grid(row=11, column=0)
 
@@ -163,6 +150,3 @@ label_text_pb = tk.Label(root, text="Progress 0%")
 label_text_pb.grid(row=13, column=1)
 
 root.mainloop()
-
-
-
